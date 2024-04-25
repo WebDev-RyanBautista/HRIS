@@ -1,0 +1,30 @@
+step 1- cmd run as adminitrator:
+
+	icacls c:\windows\system32\en-us /grant administrators:F
+	enter
+	icacls c:\windows\system32\en-us /grant "NT AUTHORITY\SYSTEM":F
+	enter
+	
+	<if failed>
+	
+	takeown /F C:\Windows\System32\en-us /R /A
+	enter
+	
+	icacls c:\windows\system32\en-us /grant administrators:F
+	enter
+	icacls c:\windows\system32\en-us /grant "NT AUTHORITY\SYSTEM":F
+	enter
+
+
+
+	
+step 2 - go to task manager
+
+	click run new task
+	click check box
+	browse > ---Downloads\SDK-DigitalPersona-master\SDK-DigitalPersona-master\SDK\Install\x64
+	install
+
+step 3 - try the program
+
+	C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\Release
